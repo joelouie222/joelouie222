@@ -1,0 +1,59 @@
+/*
+COLOR PALETTE
+
+Alabaster     #F8F8F8  248, 248, 248
+Athens Gray   #ECECED  236, 236, 237
+Swiss Coffee  #D5D2D0  213, 210, 208
+Pale Slate    #C4C0C3  196, 192, 195
+Shuttle Gray  #54616A  84, 97, 106
+*/
+
+/* GLOBAL STYLES 
+------------------------------------*/
+body {
+    background: #F8F8F8; 
+}
+
+/* HOME (class)
+------------------------------------*/
+.home {
+    background: url(../media/bg-img-1920x1440.jpg) no-repeat;
+    background-size: cover;
+}
+
+.home .content-wrapper {
+    background: rgb(248 248 248 / 0.9);
+}
+
+
+/* SUMMARY
+------------------------------------*/
+
+
+/* WORK EXPERIENCE
+------------------------------------*/
+
+
+/* EDUCATION
+------------------------------------*/
+
+
+/* SKILLS
+------------------------------------*/
+
+
+/* CERTIFICATIONS
+------------------------------------*/
+
+
+/* SECURITY CLEARANCE
+------------------------------------*/
+
+
+/* FOOTER
+------------------------------------*/
+footer {
+    background: #54616A;
+    color: #F8F8F8;
+}
+
