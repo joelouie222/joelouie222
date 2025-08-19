@@ -144,6 +144,18 @@ header h2 {
     font-weight: bold;
 }
 
+/* CREDLY BADGES STYLING
+------------------------------------*/
+.credly-badges {
+    display: flex;
+    flex-wrap: wrap;          /* Allows badges to wrap to the next line on small screens */
+    justify-content: center;  /* Centers the badges horizontally */
+    gap: 10px;                /* Creates consistent space between all badges */
+    margin-top: 10px;         /* Adds space between the list and the badges */
+    padding-top: 10px;
+    border-top: 2px solid #dfe6e9; Adds a subtle separator line
+}
+
 
 /* DOWNLOAD BUTTON
 ------------------------------------*/
