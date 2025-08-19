@@ -45,4 +45,5 @@ I'm proficient in a broad range of technical areas, combining deep cybersecurity
 ### 📫 Connect with Me
 
 - Email: joe_louie.corporal@outlook.com
-- LinkedIn: https://www.linkedin.com/in/joelouiecorporal/
+- LinkedIn: [https://www.linkedin.com/in/joelouiecorporal/](https://www.linkedin.com/in/joelouiecorporal/)
+- Website: [https://www.joecorporal.com/](https://www.joecorporal.com/)
