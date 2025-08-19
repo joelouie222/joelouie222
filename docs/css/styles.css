@@ -1,21 +1,17 @@
 /*
 COLOR PALETTE
-https://coolors.co/c4c0c3-f8f8f8-ececed-54616a-d5d2d0
-
-Alabaster     #F8F8F8  248, 248, 248
-Athens Gray   #ECECED  236, 236, 237
-Swiss Coffee  #D5D2D0  213, 210, 208
-Pale Slate    #C4C0C3  196, 192, 195
-Shuttle Gray  #54616A  84, 97, 106
+Primary: #2c3e50 (Midnight Blue) - For text and headers
+Secondary: #3498db (Peter River Blue) - For links, accents, and borders
+Background: #ecf0f1 (Clouds) - Main background
+Content BG: #ffffff (White) - Content wrapper background
+Footer BG: #34495e (Wet Asphalt) - Footer background
 */
 
 /* GLOBAL STYLES 
 ------------------------------------*/
-/* 
-  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
-*/
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth; /* Adds smooth scrolling for any future anchor links */
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -26,100 +22,189 @@ html, body {
 }
 
 body {
-    background: #F8F8F8; 
+    background-color: #ecf0f1; 
     margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern, clean font stack */
+    line-height: 1.6;
+    color: #2c3e50;
 }
 
 /* Links */
 a { 
-    color: #C4C0C3;
-    
+    color: #3498db;
+    text-decoration: none; /* Remove underline by default */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 a:hover {
-    color: #F8F8F8;
-    text-decoration: none;
+    color: #2980b9; /* A slightly darker blue for hover */
+    text-decoration: underline;
 }
 
 
-/* HOME (class)
+/* LAYOUT & CONTENT WRAPPER
 ------------------------------------*/
 .home {
-    background: url(../media/bg-img-1920x1440.jpg) no-repeat;
+    background: url(../media/bg-img-1920x1440.jpg) no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    position: relative;
 }
-.home .content-wrapper {
-    background: rgb(248 248 248 / 0.9);
-}
+
+/* Overlay */
+.home::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay at 50% opacity */;
+    z-index: -1;
+} 
 
 .content-wrapper {
-    margin: 0 auto;
-    padding: 30px;
+    margin: 40px auto;
+    padding: 50px;
     max-width: 900px;
+    background: rgba(255, 255, 255, 0.90); /* Slightly transparent white */
+    border-radius: 8px; /* Soft rounded corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
-.btn {
-    background: #C4C0C3;
-    color: #F8F8F8;
-    text-decoration: none;
-}
-.download-link {
-    position: fixed;
-    top: 5px;
-    left: 5px;
-}
 
+/* HEADER
+------------------------------------*/
 header {
-    margin-bottom: 50px;
+    text-align: center; /* Center the main title */
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dfe6e9;
 }
 
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.2em;
+    color: #2c3e50;
+}
+
+header h2 {
+    font-size: 1.4em;
+    font-weight: 300; /* Lighter font weight for the subtitle */
+    color: #54616A;
+    margin-top: 0;
+}
+
+
+/* RESUME SECTIONS
+------------------------------------*/
 .resume-section {
     margin-bottom: 50px;
 }
+
 .resume-section h2 {
-    border-bottom: 2px solid #C4C0C3;
+    font-size: 1.8em;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.resume-section h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* Style for job/education details (location, dates) */
+.resume-section p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #54616A;
+}
+
+/* Styling for lists in work experience, skills etc. */
+.resume-section ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 20px;
+}
+
+.resume-section ul li {
+    position: relative;
+    padding-left: 25px; /* Make space for custom bullet */
+    margin-bottom: 12px;
+}
+
+/* Custom bullet points for a cleaner look */
+.resume-section ul li::before {
+    content: '›'; /* Using a chevron as a bullet */
+    position: absolute;
+    left: 0;
+    top: -2px;
+    font-size: 1.5em;
+    color: #3498db;
+    font-weight: bold;
 }
 
 
-/* SUMMARY
+/* DOWNLOAD BUTTON
 ------------------------------------*/
+.download-link {
+    position: fixed;
+    top: 15px;
+    right: 15px; /* Moved to top right for better placement */
+    left: auto;
+    background: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-
-/* WORK EXPERIENCE
-------------------------------------*/
-
-
-/* EDUCATION
-------------------------------------*/
-
-
-/* SKILLS
-------------------------------------*/
-
-
-/* CERTIFICATIONS
-------------------------------------*/
-
-
-/* SECURITY CLEARANCE
-------------------------------------*/
+.download-link:hover {
+    background-color: #2980b9;
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
 
 
 /* FOOTER
 ------------------------------------*/
 footer {
-    background: #54616A;
-    color: #F8F8F8;
+    background: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ecf0f1;
+    font-weight: bold;
+}
+footer a:hover {
+    color: #3498db;
 }
 
 .socials {
     list-style-type: none;
     padding: 0;
+    margin-top: 20px;
 }
 .socials li {
     display: inline-block;
+    margin: 0 10px;
 }
 .socials img {
     width: 32px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.socials img:hover {
+    transform: scale(1.15); /* Slightly enlarge icons on hover */
 }
