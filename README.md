@@ -28,12 +28,13 @@ I'm proficient in a broad range of technical areas, combining deep cybersecurity
 - Network Security: Network Segmentation, Access Control Lists (ACLs), VPN, PKI.
 
 ### 🎓 Education & Certifications
-- Bachelor of Science (BS) in Computer Science | University of Texas in San Antonio (UTSA)
+- [Bachelor of Science (BS) in Computer Science | University of Texas in San Antonio (UTSA)](https://www.parchment.com/u/award/81f7d3ab8a0d4e360a35c80d9b7bb6e3)
 - Active TS/SCI Clearance
-- GIAC Certified Forensic Analyst (GCFA)
-- GIAC Certified Intrusion Analyst (GCIA)
-- Cybersecurity Analyst+ (CySA+)
-- Security+ (Sec+)
+- [GIAC Certified Forensic Analyst (GCFA)](https://www.credly.com/badges/60b54a99-394a-400c-8a05-7727742a92a9/public_url)
+- [GIAC Certified Intrusion Analyst (GCIA)](https://www.credly.com/badges/79b311eb-de2e-4759-af8b-4e5599644c0d/public_url)
+- [Cybersecurity Analyst+ (CySA+)](https://www.credly.com/badges/e93a6e46-156a-4c4c-bcc7-8f1f770a4029/public_url)
+- [Security+ (Sec+)](https://www.credly.com/badges/1f973e72-d3bd-443b-a1c9-6461dd9db85b/public_url)
+
 
 ### 💻 Featured Projects
 
